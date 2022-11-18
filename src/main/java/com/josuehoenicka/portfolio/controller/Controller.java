@@ -33,7 +33,7 @@ public class Controller {
         peopleList.add(p);
     }
     
-    @GetMapping("/watch/people")
+    @GetMapping("/watch/peoples")
     @ResponseBody
     public List<People> watchPeople() {
         return peopleList;
