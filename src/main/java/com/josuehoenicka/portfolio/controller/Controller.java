@@ -32,4 +32,9 @@ public class Controller {
         peopleList.add(p);
     }
     
+    @GetMapping("/watch/people")
+    public List<People> watchPeople() {
+        return peopleList;
+    }
+    
 }
