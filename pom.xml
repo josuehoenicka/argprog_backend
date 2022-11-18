@@ -48,6 +48,11 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>8.0.26</scope>
                 </dependency>
+                <dependency>
+                        <groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>1.4.200</scope>
+                </dependency>
 	</dependencies>
 
 	<build>
