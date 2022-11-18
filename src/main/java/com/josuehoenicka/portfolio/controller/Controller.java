@@ -1,4 +1,4 @@
-package com.josuehoenicka.portfolio.Controller;
+package com.josuehoenicka.portfolio.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
