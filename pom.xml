@@ -43,7 +43,11 @@
 			<artifactId>spring-data-jpa</artifactId>
 			<scope>2.5.3</scope>
                 </dependency>
-            </depnedency>
+                <dependency>
+                        <groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>8.0.26</scope>
+                </dependency>
 	</dependencies>
 
 	<build>
