@@ -2,14 +2,21 @@ package com.josuehoenicka.portfolio.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
 public class Controller {
     
-    @GetMapping ("/hello/{name}/{lastname}")
-    public String SayHello(@PathVariable String name,
+    @GetMapping ("/hi/{name}/{lastname}")
+    public String SayHi(@PathVariable String name,
                            @PathVariable String lastname) {
-        return "Hello " + name + " " + lastname + ", welcome!";
+        return "Hi " + name + " " + lastname + ", welcome!";
+    }
+        
+    @GetMapping ("/bye")
+    public String SayBye(@RequestParam String name,
+                         @RequestParam String lastname) {
+       return "Bye " + name + " " + lastname + ", see you later!";  
     }
 }
