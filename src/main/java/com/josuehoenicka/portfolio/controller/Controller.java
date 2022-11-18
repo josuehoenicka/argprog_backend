@@ -28,7 +28,7 @@ public class Controller {
        return "Bye " + name + " " + lastname + ", see you later!";  
     }
     
-    @PostMapping ("/new/peeople")
+    @PostMapping ("/new/people")
     public void addPeople(@RequestBody People p) {
         peopleList.add(p);
     }
